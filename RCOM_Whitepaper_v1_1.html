@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RED COMRADE Whitepaper Version 1.1</title><meta name="description" content="RCOM token details, proposed distribution policy, wallet control, liquidity disclosures, and risks."><style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#181818;background:#e9e9e6;font-size:17px;line-height:1.65}*{box-sizing:border-box}body{margin:0}main{max-width:960px;margin:32px auto;background:#fff;padding:56px 64px 64px}h1,h2,h3{color:#000;line-height:1.2;letter-spacing:-.025em;break-after:avoid}h1{font-size:2.6rem;margin:0 0 20px}h2{font-size:1.6rem;margin:48px 0 20px}h3{font-size:1.15rem;margin:30px 0 14px}p{margin:0 0 18px;orphans:3;widows:3}a{color:#7f211b;text-underline-offset:3px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #7f211b;outline-offset:3px}code{font-family:Consolas,monospace;font-size:.83em;overflow-wrap:anywhere;word-break:break-word}table{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.5;margin:10px 0 24px;table-layout:fixed}th,td{border:1px solid #d9d9d9;padding:12px 14px;text-align:left;vertical-align:middle;overflow-wrap:anywhere}th{background:#333;color:#fff;font-weight:700}tbody tr:nth-child(even){background:#f4f4f4}tr{break-inside:avoid}thead{display:table-header-group}.table-wrap{width:100%}main>p:first-of-type{font-size:.9rem;color:#555;margin-bottom:30px}@media(max-width:650px){main{padding:28px 20px;margin:0}h1{font-size:2rem}table{font-size:.8rem}td,th{padding:9px 7px}}@media print{@page{size:A4;margin:18mm}body{background:white}main{max-width:none;margin:0;padding:0;font-size:10.5pt;line-height:1.5}h1{font-size:25pt}h2{font-size:17pt;margin-top:24pt}h3{font-size:12pt}table{font-size:9pt}td,th{padding:7pt}a{color:#181818}p{margin-bottom:10pt}}
+</style></head><body><main><h1>RED COMRADE Whitepaper</h1>
+<p><strong>Version 1.1 — Proposed distribution policy — 10 September 2026</strong></p>
+<p>RED COMRADE (RCOM) is a founder-managed Solana meme token built around political, economic, and crypto satire. This paper explains the token, its existing controls, and a proposed transition toward wider distribution. The founder’s intended personal allocation is 50 million RCOM, or 5% of launch supply. This is a target allocation, not a claim that the founder currently controls only 5%.</p>
+<p>At the snapshot described below, the founder controls five major wallets holding approximately 499.48 million RCOM and the withdrawable Raydium liquidity position. Community and sale allocations remain founder-controlled until transferred. No new distributions, token sales, or vesting contracts are established by publishing this paper.</p>
+<h2>00 Project identity</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td>Name</td><td>RED COMRADE</td></tr>
+<tr><td>Symbol</td><td>RCOM</td></tr>
+<tr><td>Network</td><td>Solana mainnet</td></tr>
+<tr><td>Token program</td><td>Token-2022</td></tr>
+<tr><td>Decimals</td><td>9</td></tr>
+<tr><td>Launch supply</td><td>1,000,000,000 RCOM</td></tr>
+<tr><td>Supply at the verification snapshot</td><td>999,964,390.679388630 RCOM</td></tr>
+</tbody></table></div>
+<p><strong>Canonical mint address</strong></p>
+<p><code>29bFhrwpthoJadSyP6YV28gnxNY48jV1YaMgDcKMAHdH</code></p>
+<p>Always verify the mint address. A name, symbol, image, or social profile can be copied by another token. RCOM is an independent project with no affiliation claimed with any government, political party, public figure, or outside organization.</p>
+<h2>01 Executive summary</h2>
+<p>RCOM’s theme is a token for Earthlings: one billion tokens at launch in a world of more than eight billion people. The mismatch is a satirical premise about scarcity and ownership. RCOM has nine decimal places, so a person does not need a whole token to participate.</p>
+<p>The token’s mint, freeze, metadata update, and metadata pointer authorities are disabled. Additional RCOM cannot be created through the mint authority. Token holders can still burn tokens, reducing supply. Metadata is fixed on-chain and references IPFS content; website and social content remain editable.</p>
+<p>The proposed distribution policy retains 50 million RCOM as the founder’s personal allocation, earmarks 200 million RCOM for community rewards and giveaways, and earmarks approximately 249.48 million RCOM for staged sales. The existing liquidity position remains separate and withdrawable. There is no commitment to sell or distribute every earmarked token by a particular date.</p>
+<p>RCOM does not promise appreciation, guaranteed income, a fixed redemption value, or support for its market price. Wider distribution is an objective, not an accomplished result.</p>
+<h2>02 Purpose and philosophy</h2>
+<p>RCOM explores meme culture, community identity, scarcity, and ownership through satire. The language of solidarity and collective participation is part of the project’s theme; it does not mean that token holders currently govern the project or own its treasury.</p>
+<p>The project is founder-managed. Community participation can inform its direction, but no binding token-holder governance arrangement is represented as active. Important claims about supply, wallet control, distribution, liquidity, and restrictions should be supported by public records.</p>
+<p>Solana provides the infrastructure for the token, transfers, and its existing decentralized pool. Transaction costs and service availability vary. Using public blockchain infrastructure does not eliminate operational, custody, or market risk.</p>
+<h2>03 Token architecture and controls</h2>
+<p>RCOM launched with one billion tokens. At finalized Solana slot <strong>445796391</strong>, the recorded supply was <strong>999,964,390.679388630 RCOM</strong>, a reduction of <strong>35,609.320611370 RCOM</strong> from launch supply. This is a dated snapshot, not a live supply counter.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Control</th><th scope="col">Verified state</th><th scope="col">Practical effect</th></tr></thead><tbody>
+<tr><td>Mint authority</td><td>Disabled</td><td>No further issuance through this authority</td></tr>
+<tr><td>Freeze authority</td><td>Disabled</td><td>No freeze authority can freeze RCOM token accounts</td></tr>
+<tr><td>Metadata update authority</td><td>Disabled</td><td>On-chain name, symbol, URI, and metadata fields cannot be updated through this authority</td></tr>
+<tr><td>Metadata pointer authority</td><td>Disabled</td><td>The metadata account pointer cannot be changed through this authority</td></tr>
+<tr><td>Project wallets</td><td>Founder-controlled</td><td>Tokens held in these wallets remain under founder control</td></tr>
+<tr><td>Raydium LP position</td><td>Founder-controlled and unlocked</td><td>The founder retains withdrawal access</td></tr>
+</tbody></table></div>
+<p>The mint data contains the metadata pointer and token metadata extensions. The verified snapshot does not show a transfer-fee or permanent-delegate extension. This description of observed settings is not a smart-contract audit or a guarantee that every service will support RCOM.</p>
+<p>The metadata JSON and its image reference use content-addressed IPFS identifiers. Their content cannot be substituted under the same CID, but files must remain available through pinning and retrieval services. The website uses a cleaned version of the logo; the immutable metadata still references the original image. Explorer and wallet display updates may depend on their own indexing.</p>
+<h2>04 Proposed allocation and distribution</h2>
+<p>Version 1.1 proposes replacing v1’s separate treasury, community, reserve, development, and founder budget categories with the following distribution policy. These labels describe intended uses. They do not create separate ownership, escrow, vesting, or a transfer restriction.</p>
+<h3>Allocation targets</h3>
+<div class="table-wrap"><table><thead><tr><th scope="col">Intended use</th><th scope="col">RCOM</th><th scope="col">Basis and status</th></tr></thead><tbody>
+<tr><td>Founder personal allocation</td><td>50,000,000</td><td>5% of launch supply; no enforced vesting</td></tr>
+<tr><td>Community rewards and giveaways</td><td>200,000,000</td><td>20% of launch supply; planned distributions</td></tr>
+<tr><td>Staged sales</td><td>249,481,739.906972149</td><td>Remaining balance in the five disclosed wallets after the two allocations above; sales terms not yet set</td></tr>
+<tr><td>RCOM in the existing pool</td><td>499,971,494.537710010</td><td>Snapshot of the pool’s RCOM reserve; not a community distribution</td></tr>
+<tr><td>Remaining balances outside those wallets and pool</td><td>511,156.234706471</td><td>Residual supply; beneficial ownership not established by this paper</td></tr>
+<tr><td>Total outstanding supply at snapshot</td><td>999,964,390.679388630</td><td>Excludes burned tokens</td></tr>
+</tbody></table></div>
+<p>The sale budget is approximately 249.48 million, rather than the earlier illustrative 250 million. The policy uses current balances and avoids allocating more tokens than are available. Pool balances, burns, and transfers can change these figures; reconcile balances before each release.</p>
+<p>The 50 million founder allocation equals exactly 5% of launch supply and slightly more than 5% of the reduced outstanding supply. It is separate from any continuing control over undistributed tokens or liquidity.</p>
+<h3>Current wallet control</h3>
+<p>The founder has confirmed control of the following owner addresses. Balances were checked at the same finalized slot. The individual addresses have not yet been assigned to the new distribution categories in this paper.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Owner address</th><th scope="col">RCOM held directly</th></tr></thead><tbody>
+<tr><td><code>7AspQ289McdVQ2qnzhNDixQoAfme7rAVrhYJHm1YmmWj</code></td><td>200,000,000</td></tr>
+<tr><td><code>5wQNK2L5obkYwYCrtZQZ8Awo88wGMactVCx3adjP2pBK</code></td><td>100,000,000</td></tr>
+<tr><td><code>GeWi26jwxLdcUC6jhNmsMn6mjDvinK1c91fz3Mh1nksD</code></td><td>90,000,000</td></tr>
+<tr><td><code>9Zv2QtxnRKEB56Xb1vQMqBt5EGN7QfDfApTWMVbCgsz3</code></td><td>59,481,739.906972149</td></tr>
+<tr><td><code>5cyqCtPfqE6Q5wLUZewJrdRdPGezDjfmgM15kFapxzY6</code></td><td>50,000,000</td></tr>
+<tr><td>Total</td><td>499,481,739.906972149</td></tr>
+</tbody></table></div>
+<p>Moving RCOM among these or other founder-controlled wallets does not increase independent ownership. Adding RCOM to the founder’s withdrawable LP position also does not constitute a giveaway. The project should report distributed amounts separately from earmarked, offered-for-sale, and undistributed balances.</p>
+<h2>05 Liquidity and founder access</h2>
+<p>RCOM trades through the identified Raydium WSOL–RCOM CPMM pool. At the snapshot, the founder’s wallet <code>9Zv2QtxnRKEB56Xb1vQMqBt5EGN7QfDfApTWMVbCgsz3</code> held <strong>50,382.049067430 LP tokens</strong>, equal to the current issued LP token supply checked for that pool.</p>
+<p>The project retains withdrawal control. The position is not represented as permanently locked or burned. Withdrawing liquidity returns a proportional share of the underlying assets under the pool’s rules; it does not guarantee recovery of the original SOL amount. Trading changes reserve composition. Removing substantial liquidity can impair trading and increase price impact.</p>
+<p>The founder’s planned 5% personal allocation is therefore not a 5% cap on total effective control. While the founder retains the LP position and undistributed allocations, those must be disclosed separately. The pool’s roughly 50% token reserve must not be advertised as tokens already distributed to independent holders.</p>
+<p>The earlier proposal for 24-month founder vesting has not been implemented and is not a commitment in this version. The founder’s personal allocation is unvested and can be transferred. Any future vesting arrangement would require separately defined terms, funding, and a verifiable contract before being described as active.</p>
+<h2>06 Community distribution and staged sales</h2>
+<h3>Community allocation</h3>
+<p>The proposed 200 million RCOM community budget can support giveaways, rewards, grants, and contributions to the project. It is a budget ceiling, not an announced giveaway or a promise of individual entitlement.</p>
+<p>Before each program, publish the amount, eligibility rules, selection method, per-recipient limits, relevant dates, and distribution method. Start with a bounded release and review participation before committing to additional rounds. Design limits to discourage duplicate claims without representing wallet counts as counts of unique people.</p>
+<p>Publish distribution transaction references and remaining budget totals. Disclose any recipients controlled by or affiliated with the founder. Do not manufacture volume, holder counts, endorsements, or engagement to suggest demand that does not exist.</p>
+<h3>Sale allocation</h3>
+<p>Approximately 249.48 million RCOM is earmarked for possible staged sales. No price, sale date, venue, batch size, or fundraising target is established by this paper. The balance remains founder-controlled until sold or otherwise allocated through a disclosed policy change.</p>
+<p>Before offering a tranche, publish its token amount, price or pricing method, eligibility, timing, fees, custody or settlement method, and intended use of proceeds. Identify who receives and controls the proceeds and distinguish personal compensation from project spending. Review applicable requirements for the actual sale structure and participants before launch.</p>
+<p>Selling a large tranche directly into the existing small pool could substantially reduce its SOL reserves and depress the price. A sale budget does not imply that the pool can absorb it. Sale terms should account for market depth rather than treating the full allocation as immediately saleable at a displayed price.</p>
+<h3>Potential utility and participation</h3>
+<p>RCOM begins as a meme token. Tipping, creative rewards, community grants, polls, and optional experiences may be explored where there is actual demand. These are possible uses, not delivered features or guaranteed benefits. Token ownership does not itself confer binding project governance, a claim on sale proceeds, or a right to withdraw project liquidity.</p>
+<h2>07 Roadmap and current status</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Area</th><th scope="col">Status at this revision</th></tr></thead><tbody>
+<tr><td>Token launch and mint authority revocation</td><td>Completed</td></tr>
+<tr><td>Freeze and metadata authority settings</td><td>Verified disabled</td></tr>
+<tr><td>IPFS metadata</td><td>On-chain URI updated; content remains dependent on availability</td></tr>
+<tr><td>Website and public contact</td><td>Published</td></tr>
+<tr><td>Raydium liquidity</td><td>Existing position; founder retains withdrawal access</td></tr>
+<tr><td>Solscan profile update</td><td>Request received under ticket 74140; approval not asserted</td></tr>
+<tr><td>Mixed community and sales plan</td><td>Proposed in this revision; no new transfers executed by drafting it</td></tr>
+<tr><td>Founder vesting</td><td>Not implemented; no vesting commitment in this version</td></tr>
+<tr><td>Program rules and sale terms</td><td>To be defined before each release</td></tr>
+<tr><td>Independent governance and additional utility</td><td>Not represented as active</td></tr>
+</tbody></table></div>
+<p>The next operational steps are to designate the founder and distribution wallets, reconcile balances, publish the adopted policy, and define the first bounded community program. Sale preparation is separate from a community giveaway and requires its own terms. Future releases should be documented with amounts, transaction references, remaining balances, and any material changes in control.</p>
+<p>The roadmap is directional. It does not promise returns, exchange acceptance, completion dates, or the implementation of every potential feature.</p>
+<h2>08 Risks and disclosures</h2>
+<p><strong>Market and liquidity risk.</strong> RCOM may lose some or all value. A small pool can experience substantial slippage and price changes. The founder can withdraw the current liquidity position. Access to withdrawal does not protect the founder or holders from trading losses or changes in reserve composition.</p>
+<p><strong>Concentration and governance risk.</strong> The founder currently controls the major disclosed wallets and the LP position. The proposed distribution plan does not remove this concentration until actual ownership or control changes. Founder-controlled tokens can be transferred or sold, including the unvested personal allocation.</p>
+<p><strong>Contract and network risk.</strong> Solana, Token-2022, Raydium, wallets, and other infrastructure can fail, be exploited, or become unavailable. The authority checks in this paper do not constitute a security audit.</p>
+<p><strong>Operational and metadata risk.</strong> Key loss, compromised accounts, incorrect transfers, and poor custody practices can cause loss. The immutable on-chain metadata cannot be corrected later. IPFS availability requires ongoing pinning, while website hosting, email, and social services have separate availability and account risks.</p>
+<p><strong>Distribution and regulatory risk.</strong> Giveaways and sales can face eligibility, tax, consumer-protection, promotion, and other requirements that depend on their structure and jurisdiction. Duplicate claims, unfair selection, or unclear sale terms can harm participants and the project.</p>
+<p><strong>Narrative and impersonation risk.</strong> Interest in a meme token can disappear. Anyone can copy branding or the ticker. Verify the canonical mint and official links, and never disclose a seed phrase or private key to claim tokens or receive support.</p>
+<p>This paper describes the project and a proposed distribution policy. It does not establish a sale, fixed redemption obligation, guaranteed yield, or promised investment return. Participants should assess the relevant facts and risks before transacting.</p>
+<h2>09 Transparency and references</h2>
+<p>Allocation intentions, actual transfers, wallet balances, and control restrictions should be reported as separate facts. Public updates should disclose material founder or project sales, withdrawals, changes in spending policy, and revisions to release plans. Do not describe an unimplemented restriction as vesting or a planned distribution as completed circulation.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Reference</th><th scope="col">Location</th></tr></thead><tbody>
+<tr><td>Project website</td><td><a href="https://skyrezz2100.github.io/rcom-site/">RED COMRADE website</a></td></tr>
+<tr><td>Project updates</td><td><a href="https://x.com/COMRADE_COIN">COMRADE COIN on X</a></td></tr>
+<tr><td>Contact</td><td><a href="mailto:redcomrade.contact@gmail.com">redcomrade.contact@gmail.com</a></td></tr>
+<tr><td>Token and supply</td><td><a href="https://solscan.io/token/29bFhrwpthoJadSyP6YV28gnxNY48jV1YaMgDcKMAHdH">RCOM on Solscan</a></td></tr>
+<tr><td>Holder information</td><td><a href="https://solscan.io/token/29bFhrwpthoJadSyP6YV28gnxNY48jV1YaMgDcKMAHdH#holders">RCOM holders</a></td></tr>
+<tr><td>Raydium pool</td><td><a href="https://solscan.io/account/7u9FtuyFCvZGZwcf8vFn8B1rCGfC2nbTqhdNB2GqDHBT">WSOL RCOM pool</a></td></tr>
+<tr><td>LP token</td><td><a href="https://solscan.io/token/3yvWCt8EyHtWREsiLMHU3dJ2rydkpMcTVyuUF9Ne35wp">RCOM pool LP token</a></td></tr>
+<tr><td>Metadata JSON</td><td><a href="https://gold-quiet-kiwi-788.mypinata.cloud/ipfs/bafkreicxg2up3spwti53buithsn52ypgvwcqiyrdpvaqtvnprd72nyvfky">IPFS metadata through gateway</a></td></tr>
+<tr><td>Original metadata image</td><td><a href="https://gold-quiet-kiwi-788.mypinata.cloud/ipfs/bafybeihwomsielim2p4srb6m6m55ncv77exx6g77vqqjzk3qv5ycavldvm">IPFS image through gateway</a></td></tr>
+<tr><td>Authority mechanics</td><td><a href="https://solana.com/docs/tokens/basics/set-authority">Solana token authority documentation</a></td></tr>
+<tr><td>Metadata mechanics</td><td><a href="https://solana.com/docs/tokens/extensions/metadata">Solana metadata extensions</a></td></tr>
+<tr><td>Pool mechanics</td><td><a href="https://docs.raydium.io/products/cpmm">Raydium CPMM documentation</a></td></tr>
+</tbody></table></div>
+<p><strong>Metadata URI</strong></p>
+<p><code>ipfs://bafkreicxg2up3spwti53buithsn52ypgvwcqiyrdpvaqtvnprd72nyvfky</code></p>
+<p><strong>Image URI stored in the metadata</strong></p>
+<p><code>ipfs://bafybeihwomsielim2p4srb6m6m55ncv77exx6g77vqqjzk3qv5ycavldvm</code></p>
+<p>Technical balances and controls in this revision refer to finalized Solana slot 445796391, checked on 10 September 2026. Wallet-control attribution is based on the founder’s disclosure; blockchain balances alone do not establish beneficial ownership. Consult current chain records for later changes.</p>
+<h3>Changes from version 1</h3>
+<p>This revision introduces the proposed personal, community, and staged-sale allocation policy; distinguishes launch supply from outstanding supply; documents immutable metadata and updated public references; explicitly discloses founder control and unlocked liquidity; and removes the unimplemented 24-month founder vesting commitment. It also distinguishes planned releases from actual circulation and explains fractional token ownership.</p></main></body></html>
